@@ -248,7 +248,7 @@ const gameOverScreen=(flag)=>{
     root.innerHTML=`
     <div class="gameOverContent">
         <h2>Game Over</h2>
-        <p id="theFinalScore">${flag==true? accPlayerOne.Name : accPlayerTwo.Name} won</p>
+        <p id="theFinalScore">${flag==true? accPlayerOne.Name : accPlayerTwo.Name} won with ${flag==true? accPlayerOne.Points : accPlayerTwo.Points} Points</p>
         <div class="FinalButtonList">
             <div id="ButtonGameOptions">
                 <button id="newGameButton">New Game</button>
@@ -301,9 +301,9 @@ const declareVictor =()=>{
     let theFinalScore = document.getElementById('theFinalScore')
     console.log(accPlayerOne.Points,accPlayerTwo.Points)
     if(accPlayerOne.Points>accPlayerTwo.Points){
-        theFinalScore.textContent=`${accPlayerOne.Name} won`
+        theFinalScore.textContent=`${accPlayerOne.Name} won with ${accPlayerOne.Points} Points`
     }else if(accPlayerOne.Points<accPlayerTwo.Points){
-        theFinalScore.textContent=`${accPlayerTwo.Name} won`
+        theFinalScore.textContent=`${accPlayerTwo.Name} won with ${accPlayerTwo.Points} Points`
     }else{
         theFinalScore.textContent="It's a draw"
     }
