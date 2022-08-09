@@ -1,0 +1,145 @@
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.column{
+    background-color: beige;
+    padding:2px;
+    border: 1px black solid;
+    max-height: 60px;
+    width: 120px;
+
+}
+body,html,#root{
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding:0px;
+    font-family: quicksand;
+}
+body{
+    background-color: rgb(247, 237, 218);
+}
+.TitleHomePage{
+    width: 100%;
+    background-color:#14213D;
+    color:#fca311;
+}
+.GameTitle{
+    padding:16px;
+    margin: 0px;
+    font-family: montserrat;
+    font-size:xx-large
+}
+.nameCardParent{
+    margin:8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.nameCard{
+    width: 300px;
+    margin:8px;
+    padding:20px 8px 32px 8px;
+    border-radius: 8px;
+    background-color:#dda15e ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.InputForPlayerName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.InputForPlayerName p{
+    font-weight: 600;
+}
+.InputForPlayerName input{
+    outline:none;
+    background-color: #e5e5e5;
+    border:none;
+    padding: 4px;
+    border-radius: 8px;
+    font-family: roboto;
+    font-weight: 500;
+    color:black;
+}
+.startButton,#nextRound,#endGameButton,#actualGameButton,#newGameButton,#homePageButton{
+    background-color: black;
+    color:#fca311;
+    border: none;
+    border-color: #fca311;
+    border-width: 2px;
+    border-style: solid;
+    padding:6px;
+    font-size: large;
+    font-family: montserrat;
+    border-radius: 8px;
+}
+.startButton:hover,#nextRound:hover,#endGameButton:hover,#actualGameButton:hover,#newGameButton:hover,#homePageButton:hover{
+    color:black;
+    background-color: #fca311;
+}
+.footerContent{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    padding:8px 0px;
+    background-color: #14213D;
+    color:#fca311
+}
+#displayScoreMoveAndTurn{
+    background-color: #dda15e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    padding:8px
+}
+#DisplayScore,#DisplayTurn{
+    background-color: #e5e5e5;
+    padding: 2px;
+    border-radius: 8px;
+    margin: 8px 0;
+    width: 30%;
+}
+#gameBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    text-align: center;
+}
+#remark{
+    text-align: center;
+    padding: 4px;
+    font-weight: 700;
+}
+.ButtonGameOption{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+.tossContainer{
+    font-family: Montserrat;
+    padding: 8px;
+}
+.tossMainContent{
+    font-weight: 700;
+}
+.gameOverContent{
+    padding: 8px;
+    font-size: larger;
+}
